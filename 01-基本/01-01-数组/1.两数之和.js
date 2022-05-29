@@ -85,21 +85,10 @@ var twoSum = function (nums, target) {
 1. 算出当前数字和目标数字之差
 2. 检查哈希表中是否存在该差，如果存在，返回结果
 3. 不存在，当前数字为key；索引为value存入哈希表
-
-var twoSum = function (nums, target) {
-  let map = new Map();
-  for (let i = 0, len = nums.length; i < len; i++) {
-    if (map.has(target - nums[i])) {
-      return [map.get(target - nums[i]), i];
-    } else {
-      map.set(nums[i], i);
-    }
-  }
-  return [];
-};
 */
 // @lc code=start
 /**
+ * 解法三
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
